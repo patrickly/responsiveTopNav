@@ -8,7 +8,35 @@
     <!-- Load an icon library to show a hamburger menu (bars) on small screens -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <style>
-    
+        .topnav {
+            background: #333;
+            overflow: hidden;
+        }
+
+        .topnav a {
+            float: left;
+            display: block;
+            color: #f2f2f2;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+            font-size: 17px;
+        }
+
+        .topnav a:hover {
+            background: #ddd;
+            color: black;
+        }
+
+        .topnav a.active{
+            background: #4caf50;
+            color: white;
+        }
+
+        .topnav .icon {
+            display: none;
+        }
+
     </style>
     <script>
     
@@ -22,6 +50,7 @@
         <a href="#about">About</a>
         <a href="javascript:void(0);" class="icon" onclick="myFunction()">
           <i class="fa fa-bars"></i>
+          <!-- https://www.quackit.com/javascript/tutorial/javascript_void_0.cfm -->
         </a>
       </div>
 </body>
